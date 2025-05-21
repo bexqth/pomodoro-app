@@ -2,10 +2,33 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="row row-title" title="row">
+        <h1 class="pomodoro-title">Pomodoro Timer</h1>
 
+    </div>
 
+    <div class="row row-buttons" >
+        <div class="col col-pom">
+            <button class="pixel-button pomodoro-button">Pomodoro</button>
+        </div>
+        <div class="col">
+            <button class="pixel-button short-break-button">Short break</button>
+        </div>
+        <div class="col col-short">
+            <button class="pixel-button long-break-button">Long break</button>
+        </div>
+    </div>
+
+    <div class="row timer-row">
+
+    </div>
+    
 </body>
 </html>
