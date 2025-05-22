@@ -4,42 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pomodoro Timer</title>
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body id="body">
-    <div class="row row-title" id="background" title="row">
-        <h1 class="pomodoro-title">Pomodoro Timer</h1>
+  <div class="header">
+    <h1 class="pomodoro-title" id="pomodoro-title">🍅 Pomodoro 🍅</h1>
+  </div>
 
-    </div>
+  <div class="mode-buttons">
+    <button class="pixel-button pomodoro-button" id="pomodoro-button" onclick="setPomodoro()">
+      Work
+    </button>
+    <button class="pixel-button short-break-button" id="short-break-button" onclick="setShortBreak()">
+      Short
+    </button>
+    <button class="pixel-button long-break-button" id="long-break-button" onclick="setLongBreak()">
+      Long
+    </button>
+  </div>
 
-    <div class="row row-buttons" id="background">
-        <div class="col col-pom" id="background">
-            <button class="pixel-button pomodoro-button" id="pomodoro-button" onclick="setPomodoro()">Pomodoro</button>
-        </div>
-        <div class="col" id="background">
-            <button class="pixel-button short-break-button" id="short-break-button" onclick="setShortBreak()">Short break</button>
-        </div>
-        <div class="col col-short" id="background">
-            <button class="pixel-button long-break-button" id="long-break-button" onclick="setLongBreak()">Long break</button>
-        </div>
-    </div>
+  <div class="timer-section">
+    <label class="time-label" for="time-input">Time:</label>
+    <input type="number" id="time-input" name="time-input" class="time-input" min="1" max="60" value="25">
+    <button class="pixel-button play-button" id="play-button" onclick="startTimer()">
+      <i class="bi bi-play-fill play-icon"></i>
+    </button>
+  </div>
 
-    <div class="row timer-row" id="background">
-      <div class="row" id="background">
-        <label class="time-label" for="time">Time:</label>
-      </div>
-      <div class="row" id="background">
-        <input type="number" id="time-input" name="time-input" class="time-input" min="1" max="60" value="25">
-      </div>
-      <div class="row" id="background">
-        <button class="play-button pixel-button" id="play-button" onclick="startTimer()"><i class="bi bi-play-fill play-icon"></i></button>
-      </div>
-    </div>
-    
-    <script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
