@@ -4,10 +4,10 @@ body {
 }
 
 .pomodoro-title {
-    font-family: 'Press Start 2P', monospace;
-    font-size: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .row-title {
@@ -16,8 +16,6 @@ body {
   align-items: center;
   text-align: center;
 }
-
-
 
 .row {
   display: flex;
@@ -39,28 +37,28 @@ body {
 }
 
 .col {
-    padding-left: 2px !important;
-    padding-right: 4px !important;
+  padding-left: 2px !important;
+  padding-right: 4px !important;
 }
 
 .pomodoro-button{
-    background-color: #ec7063;
+  background-color: #ec7063;
 }
 
 .col-pom {
-    padding-left: 16px !important;
+  padding-left: 16px !important;
 }
 
 .col-short{
-    padding-right: 16px !important;
+  padding-right: 16px !important;
 }
 
 .short-break-button{
-    background-color: #85c1e9;
+  background-color: #85c1e9;
 }
 
 .long-break-button{
-    background-color: #76d7c4;
+  background-color: #76d7c4;
 }
 
 .pixel-button:active {
@@ -68,3 +66,50 @@ body {
   transform: translate(4px, 4px);
 }
 
+
+.timer-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.time-label{
+  font-family: 'Press Start 2P', monospace;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.time{
+  font-family: 'Press Start 2P', monospace;
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.time-input {
+  height: 40px;
+  width: 100px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 15px;
+  border: 2px solid #000;
+  box-shadow: 2px 2px 0 #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.play-button {
+  margin: 10px;
+  width: 60px;
+  height: 40px;
+  background-color: #ec7063;
+}
+
+.play-icon{
+  font-size: 20px;
+}

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pomodoro Timer</title>
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -16,19 +17,29 @@
 
     <div class="row row-buttons" >
         <div class="col col-pom">
-            <button class="pixel-button pomodoro-button">Pomodoro</button>
+            <button class="pixel-button pomodoro-button" id="pomodoro-button" onclick="setPomodoro()">Pomodoro</button>
         </div>
         <div class="col">
-            <button class="pixel-button short-break-button">Short break</button>
+            <button class="pixel-button short-break-button" id="short-break-button" onclick="setShortBreak()">Short break</button>
         </div>
         <div class="col col-short">
-            <button class="pixel-button long-break-button">Long break</button>
+            <button class="pixel-button long-break-button" id="long-break-button" onclick="setLongBreak()">Long break</button>
         </div>
     </div>
 
     <div class="row timer-row">
-
+      <div class="row">
+        <label class="time-label" for="time">Time:</label>
+      </div>
+      <div class="row">
+        <input type="number" id="time-input" name="time-input" class="time-input" min="1" max="60" value="25">
+      </div>
+      <div class="row">
+        <button class="play-button pixel-button" id="play-button" onclick="startTimer()"><i class="bi bi-play-fill play-icon"></i></button>
+      </div>
     </div>
     
+    <script src="script.js"></script>
+
 </body>
 </html>
