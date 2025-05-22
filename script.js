@@ -3,6 +3,8 @@ const shortBreakBtn = document.getElementById("short-break-button");
 const longBreakBtn = document.getElementById("long-break-button");
 const timeInput = document.getElementById("time-input");
 const playButton = document.getElementById("play-button");
+const body = document.getElementById("body");
+
 
 const pomodoroTime = 25;
 const shortBreakTime = 5;
@@ -55,7 +57,8 @@ function setTime(time) {
 function setLongBreak() {
   stopTimer();
   timeInput.type = "number";
-  playButton.style.backgroundColor = "#76d7c4";
+  playButton.style.backgroundColor = "#f9e79f";
+  body.style.backgroundColor = "#f9e79f";
   timeInput.setAttribute('value', longBreakTime);
   timeInput.value = longBreakTime;
   setTime(timeInput.value);
@@ -65,6 +68,7 @@ function setShortBreak() {
   stopTimer();
   timeInput.type = "number";
   playButton.style.backgroundColor = "#85c1e9";
+  body.style.backgroundColor = "#85c1e9"; 
   timeInput.setAttribute('value', shortBreakTime);
   timeInput.value = shortBreakTime;
   setTime(timeInput.value);
@@ -74,6 +78,7 @@ function setPomodoro() {
   stopTimer();
   timeInput.type = "number";
   playButton.style.backgroundColor = "#ec7063";
+  body.style.backgroundColor = "#ec7063"; 
   timeInput.setAttribute('value', pomodoroTime);
   timeInput.value = pomodoroTime;
   setTime(timeInput.value);

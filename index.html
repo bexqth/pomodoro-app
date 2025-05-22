@@ -9,32 +9,32 @@
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="row row-title" title="row">
+<body id="body">
+    <div class="row row-title" id="background" title="row">
         <h1 class="pomodoro-title">Pomodoro Timer</h1>
 
     </div>
 
-    <div class="row row-buttons" >
-        <div class="col col-pom">
+    <div class="row row-buttons" id="background">
+        <div class="col col-pom" id="background">
             <button class="pixel-button pomodoro-button" id="pomodoro-button" onclick="setPomodoro()">Pomodoro</button>
         </div>
-        <div class="col">
+        <div class="col" id="background">
             <button class="pixel-button short-break-button" id="short-break-button" onclick="setShortBreak()">Short break</button>
         </div>
-        <div class="col col-short">
+        <div class="col col-short" id="background">
             <button class="pixel-button long-break-button" id="long-break-button" onclick="setLongBreak()">Long break</button>
         </div>
     </div>
 
-    <div class="row timer-row">
-      <div class="row">
+    <div class="row timer-row" id="background">
+      <div class="row" id="background">
         <label class="time-label" for="time">Time:</label>
       </div>
-      <div class="row">
+      <div class="row" id="background">
         <input type="number" id="time-input" name="time-input" class="time-input" min="1" max="60" value="25">
       </div>
-      <div class="row">
+      <div class="row" id="background">
         <button class="play-button pixel-button" id="play-button" onclick="startTimer()"><i class="bi bi-play-fill play-icon"></i></button>
       </div>
     </div>
